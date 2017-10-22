@@ -3255,7 +3255,7 @@
 	}
 
 	#header {
-		background: rgba(39, 40, 51, 0.965);
+		background: rgba(255, 255, 255, 0.965);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
@@ -3333,15 +3333,67 @@
 	#banner {
 		background-attachment: fixed;
 		background-color: #00008B;
-		background-image: url("../../images/download.jpeg");
+		background-image: url("../../images/background2.jpg");
 		background-position: center center;
 		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 139, 0.95);
-		min-height: 100vh;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.95);
+		min-height: 90vh;
 		position: relative;
 		text-align: center;
 		z-index: 21;
 	}
+	#banner .inner {
+			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
+			-webkit-animation: reveal-banner 1s 0.25s ease-in-out;
+			-ms-animation: reveal-banner 1s 0.25s ease-in-out;
+			animation: reveal-banner 1s 0.25s ease-in-out;
+			-moz-animation-fill-mode: forwards;
+			-webkit-animation-fill-mode: forwards;
+			-ms-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+			background: rgba(52, 27, 43, 0.5);
+			color: #fff;
+			display: inline-block;
+			opacity: 0;
+			padding: 3em;
+			text-align: center;
+		}
+
+			#banner .inner header {
+				display: inline-block;
+				border-bottom: solid 2px;
+				border-top: solid 2px;
+				margin: 0 0 2em 0;
+				padding: 3px 0 3px 0;
+			}
+
+				#banner .inner header h2 {
+					border-bottom: solid 2px;
+					border-top: solid 2px;
+					font-size: 2.5em;
+					font-weight: 900;
+					letter-spacing: 0.2em;
+					margin: 0;
+					padding-left: 0.05em;
+					position: relative;
+					text-transform: uppercase;
+				}
+
+			#banner .inner p {
+				letter-spacing: 0.1em;
+				margin: 0;
+				text-transform: uppercase;
+			}
+
+				#banner .inner p a {
+					color: inherit;
+					font-weight: 400;
+					text-decoration: none;
+				}
+
+			#banner .inner footer {
+				margin: 2em 0 0 0;
+			}
 
 		#banner:before {
 			content: '';
@@ -3353,7 +3405,7 @@
 
 		#banner:after {
 			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .2), rgba(23, 24, 32, .2)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .95), rgba(23, 24, 32, ..75)), url("images/overlay.png");;
 			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
 			content: '';
@@ -3382,7 +3434,7 @@
 			}
 
 				#banner .content header h2 {
-					font-size: 2.5em;
+					font-size: 3.5em;
 					margin: 0;
 				}
 
@@ -3394,10 +3446,10 @@
 			#banner .content .image {
 				border-radius: 100%;
 				display: inline-block;
-				height: 18em;
+				height: 20em;
 				margin-left: 3em;
 				vertical-align: middle;
-				width: 18em;
+				width: 20em;
 			}
 
 				#banner .content .image img {
@@ -3978,7 +4030,7 @@
 		/* Banner */
 
 			#banner .content {
-				padding: 3em 1.5625em 5.25em 1.5625em;
+				padding: 2em 1.5625em 3.25em 1.5625em;
 			}
 
 		/* Footer */
